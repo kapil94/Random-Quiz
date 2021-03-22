@@ -1,4 +1,5 @@
 import random,os
+import sys
 
 question_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Question_papers'  # Path at which question papers will be created
 answer_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Answer_keys'	# Path at which Answer papers will be created
@@ -45,6 +46,13 @@ answer_paper=[
 
 
 		]
+		
+		
+		
+def question_sol_exists():
+	if len(os.listdir(question_path))>0 and len(os.listdir(answer_path))>0:
+		print("Question papers and solutions exists!!")
+		sys.exit(0)
 		
 def Header_question_paper():
 	
@@ -99,7 +107,8 @@ def storing_questions(key,value):
 	if key not in li:
 		li.append(key)
 	else:
-		li.append(random.choice(list(answer_key.keys())))
+		if random.choice(list(answer_key.keys())) not in li:
+			li.append(random.choice(list(answer_key.keys())))
 	random.shuffle(li)
 	
 	for i in range(0,len(li)):
@@ -108,6 +117,6 @@ def storing_questions(key,value):
 	question_obj.write("\n")
 	question_obj.close()
 	
-	
+question_sol_exists()	
 Header_question_paper()
 Storing_quest_answer()
