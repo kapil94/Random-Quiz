@@ -48,12 +48,13 @@ answer_paper=[
 		]
 		
 		
-		
+# function to check if question papers and their answers are already exist then no need to rerun again		
 def question_sol_exists():
 	if len(os.listdir(question_path))>0 and len(os.listdir(answer_path))>0:
 		print("Question papers and solutions exists!!")
 		sys.exit(0)
-		
+
+# function to add header to all question papers i.e Name,Date,Period and Title
 def Header_question_paper():
 	
 	for i in range(0,len(question_paper)):
@@ -63,34 +64,38 @@ def Header_question_paper():
 		question_obj.write("Period : "+"\n \n")	
 		question_obj.write("\t \t"+"State Capitals Quiz"+"(Form "+str(i+1)+" )"+"\n \n \n \n")
 		question_obj.close()
-		
+
+# function to create questions and their corresponding Answer keys
 def Storing_quest_answer():
 	global answer_key
 	
 	li=[]
 	for i in range(0,35):
-		li=list(answer_key.items())
-		random.shuffle(li)
-		answer_key=dict(li)
+		li=list(answer_key.items()) # getting state and their capitals and creating list out of it
+		random.shuffle(li) # to randomnly order state and their capital
+		answer_key=dict(li) # creating dictionary from list
 		
 			
-		for key in answer_key.keys():
-			storing_questions(key,question_paper[i])
-			storing_answers(answer_key[key],answer_paper[i])
+		for key in answer_key.keys(): # each key in answer_key creating and storing questions with their solution
+			storing_questions(key,question_paper[i])  # function is called to create questions in question papers
+			storing_answers(answer_key[key],answer_paper[i]) # function is called to create answers to questions in question papers
 			
 
+# answers are appended to answer sheets on a answer path
 
 def storing_answers(key,value):
 	
 	answer_obj=open(os.path.join(answer_path,value),'a')
 	answer_obj.write(key+'\n')
 	answer_obj.close()
-	
+
+# creating and appending questions on question path
 def storing_questions(key,value):
 	global count
 	global answer_key
 	li=[]
 	question_obj=open(os.path.join(question_path,value),'a')
+	
 	if count<50:
 		count=count+1
 	else:
@@ -100,10 +105,11 @@ def storing_questions(key,value):
 	question_obj.write('\n')
 	
 	
-	for i in range(0,3):
-		li.append(random.choice(list(answer_key.keys())))
+	for i in range(0,3):	# randomnly selecting three keys from dictionary to give options in MCQ
+		li.append(random.choice(list(answer_key.keys())))  # appending selected keys in list
 	random.shuffle(li)
 	
+	# to check if solution key exist in list or not , if no then in that case append key into list and if yes in that case selecting any other random key and checking if it does not exist in list then append in list   
 	if key not in li:
 		li.append(key)
 	else:
@@ -111,11 +117,14 @@ def storing_questions(key,value):
 			li.append(random.choice(list(answer_key.keys())))
 	random.shuffle(li)
 	
+	#Writing options of questions in question papers
 	for i in range(0,len(li)):
 		question_obj.write('\t'+chr(65+i)+". "+answer_key[li[i]]+"\n")
 		
 	question_obj.write("\n")
 	question_obj.close()
+	
+	
 	
 question_sol_exists()	
 Header_question_paper()
