@@ -3,7 +3,7 @@ import random,os
 question_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Question_papers'  # Path at which question papers will be created
 answer_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Answer_keys'	# Path at which Answer papers will be created
 
-count=1
+count=0
 answer_key={
 
 		"Alabama":"Montgomery","Alaska":"Juneau","Arizona":"Phoenix","Arkansas":"Little Rock","California":"Sacramento",
@@ -14,14 +14,14 @@ answer_key={
 	        "Montana":"Helena","Nebraska":"Lincoln","Nevada":"Carson City","New Hampshire":"Concord","New Jersey":"Trenton",
 	        "New Mexico":"Santa Fe","New York":"Albany","North Carolina":"Raleigh","North Dakota":"Bismarck","Ohio":"Columbus",
 	        "Oklahoma":"Oklahoma City","Oregon":"Salem","Pennsylvania":"Harrisburg","Rhode Island":"Providence",
-	        "South Carolina":"Columbia","South Dakota":"	Pierre","Tennessee":"Nashville","Texas":"Austin",
+	        "South Carolina":"Columbia","South Dakota":"Pierre","Tennessee":"Nashville","Texas":"Austin",
 	    	"Utah":"Salt Lake City","Vermont":"Montpelier","Virginia":"Richmond","Washington":"Olympia",
 	    	"West Virginia":"Charleston","Wisconsin":"Madison","Wyoming":"Cheyenne"
 	}
 	
 	
 question_paper=[
-		"Exam paper1","Exam paper2","Exam paper3","Exam paper4","Exam paper5"
+		"Exam paper1","Exam paper2","Exam paper3","Exam paper4","Exam paper5",
 		"Exam paper6","Exam paper7","Exam paper8","Exam paper9","Exam paper10",
 		"Exam paper11","Exam paper12","Exam paper13","Exam paper14","Exam paper15",
 		"Exam paper16","Exam paper17","Exam paper18","Exam paper19","Exam paper20",
@@ -45,21 +45,31 @@ answer_paper=[
 
 
 		]
-
-
+		
+def Header_question_paper():
+	
+	for i in range(0,len(question_paper)):
+		question_obj=open(os.path.join(question_path,question_paper[i]),'a')
+		question_obj.write("Name : "+"\n \n")
+		question_obj.write("Date : "+"\n \n")
+		question_obj.write("Period : "+"\n \n")	
+		question_obj.write("\t \t"+"State Capitals Quiz"+"(Form "+str(i+1)+" )"+"\n \n \n \n")
+		question_obj.close()
 		
 def Storing_quest_answer():
 	global answer_key
+	
 	li=[]
-	for i in range(0,34):
+	for i in range(0,35):
 		li=list(answer_key.items())
 		random.shuffle(li)
 		answer_key=dict(li)
+		
 			
 		for key in answer_key.keys():
 			storing_questions(key,question_paper[i])
 			storing_answers(answer_key[key],answer_paper[i])
-		 		
+			
 
 
 def storing_answers(key,value):
@@ -73,9 +83,14 @@ def storing_questions(key,value):
 	global answer_key
 	li=[]
 	question_obj=open(os.path.join(question_path,value),'a')
+	if count<50:
+		count=count+1
+	else:
+		count=1
+		
 	question_obj.write("Question No. "+str(count)+" The Capital of State of "+key+" is ?"+'\n')
 	question_obj.write('\n')
-	count=count+1
+	
 	
 	for i in range(0,3):
 		li.append(random.choice(list(answer_key.keys())))
@@ -94,5 +109,5 @@ def storing_questions(key,value):
 	question_obj.close()
 	
 	
-
+Header_question_paper()
 Storing_quest_answer()
