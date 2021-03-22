@@ -1,50 +1,350 @@
-The Capital of State of Kentucky is ?
-The Capital of State of Vermont is ?
-The Capital of State of North Dakota is ?
-The Capital of State of Tennessee is ?
-The Capital of State of Delaware is ?
-The Capital of State of North Carolina is ?
-The Capital of State of Kansas is ?
-The Capital of State of Nebraska is ?
-The Capital of State of Alaska is ?
-The Capital of State of Illinois is ?
-The Capital of State of Idaho is ?
-The Capital of State of New York is ?
-The Capital of State of Oklahoma is ?
-The Capital of State of South Dakota is ?
-The Capital of State of Louisiana is ?
-The Capital of State of Nevada is ?
-The Capital of State of New Hampshire is ?
-The Capital of State of Pennsylvania is ?
-The Capital of State of Colorado is ?
-The Capital of State of Utah is ?
-The Capital of State of Wyoming is ?
-The Capital of State of Massachusetts is ?
-The Capital of State of Montana is ?
-The Capital of State of Minnesota is ?
-The Capital of State of Arkansas is ?
-The Capital of State of Michigan is ?
-The Capital of State of Missouri is ?
-The Capital of State of South Carolina is ?
-The Capital of State of Rhode Island is ?
-The Capital of State of Maryland is ?
-The Capital of State of Arizona is ?
-The Capital of State of Indiana is ?
-The Capital of State of Ohio is ?
-The Capital of State of Iowa is ?
-The Capital of State of Georgia is ?
-The Capital of State of Oregon is ?
-The Capital of State of California is ?
-The Capital of State of Hawaii is ?
-The Capital of State of Florida is ?
-The Capital of State of Virginia is ?
-The Capital of State of Connecticut is ?
-The Capital of State of Wisconsin is ?
-The Capital of State of Mississippi is ?
-The Capital of State of Washington is ?
-The Capital of State of Texas is ?
-The Capital of State of Maine is ?
-The Capital of State of Alabama is ?
-The Capital of State of New Jersey is ?
-The Capital of State of West Virginia is ?
-The Capital of State of New Mexico is ?
+Question No. 851 The Capital of State of Michigan is ?
+
+	A. Lincoln
+	B. Lansing
+	C. Austin
+	D. Dover
+
+Question No. 852 The Capital of State of Tennessee is ?
+
+	A. Olympia
+	B. Augusta
+	C. Lincoln
+	D. Nashville
+
+Question No. 853 The Capital of State of Wisconsin is ?
+
+	A. Madison
+	B. Montpelier
+	C. 	Pierre
+	D. Topeka
+
+Question No. 854 The Capital of State of New York is ?
+
+	A. Austin
+	B. Springfield
+	C. Albany
+	D. Atlanta
+
+Question No. 855 The Capital of State of Hawaii is ?
+
+	A. Montpelier
+	B. Honolulu
+	C. Boise
+	D. Springfield
+
+Question No. 856 The Capital of State of Idaho is ?
+
+	A. Saint Paul
+	B. Augusta
+	C. Columbia
+	D. Boise
+
+Question No. 857 The Capital of State of Louisiana is ?
+
+	A. Indianapolis
+	B. Raleigh
+	C. Montgomery
+	D. Baton Rouge
+
+Question No. 858 The Capital of State of Minnesota is ?
+
+	A. Saint Paul
+	B. Albany
+	C. Des Moines
+	D. Nashville
+
+Question No. 859 The Capital of State of Indiana is ?
+
+	A. Des Moines
+	B. Indianapolis
+	C. Salem
+	D. Montpelier
+
+Question No. 860 The Capital of State of Virginia is ?
+
+	A. Raleigh
+	B. Columbia
+	C. Austin
+	D. Richmond
+
+Question No. 861 The Capital of State of Utah is ?
+
+	A. Salt Lake City
+	B. Raleigh
+	C. Baton Rouge
+	D. Sacramento
+
+Question No. 862 The Capital of State of Alaska is ?
+
+	A. Des Moines
+	B. Charleston
+	C. Olympia
+	D. Juneau
+
+Question No. 863 The Capital of State of Montana is ?
+
+	A. Springfield
+	B. Helena
+	C. Denver
+	D. Santa Fe
+
+Question No. 864 The Capital of State of Pennsylvania is ?
+
+	A. Salem
+	B. Salt Lake City
+	C. Harrisburg
+	D. Austin
+
+Question No. 865 The Capital of State of Nevada is ?
+
+	A. Springfield
+	B. Carson City
+	C. Tallahassee
+	D. Jackson
+
+Question No. 866 The Capital of State of North Carolina is ?
+
+	A. Nashville
+	B. Albany
+	C. Tallahassee
+	D. Raleigh
+
+Question No. 867 The Capital of State of Washington is ?
+
+	A. Juneau
+	B. Olympia
+	C. Raleigh
+	D. Helena
+
+Question No. 868 The Capital of State of Maryland is ?
+
+	A. Charleston
+	B. Albany
+	C. Frankfort
+	D. Annapolis
+
+Question No. 869 The Capital of State of Oregon is ?
+
+	A. Atlanta
+	B. Columbia
+	C. Lincoln
+	D. Salem
+
+Question No. 870 The Capital of State of Texas is ?
+
+	A. Salt Lake City
+	B. Austin
+	C. Springfield
+	D. Dover
+
+Question No. 871 The Capital of State of South Dakota is ?
+
+	A. Olympia
+	B. Nashville
+	C. Annapolis
+	D. 	Pierre
+
+Question No. 872 The Capital of State of Illinois is ?
+
+	A. Carson City
+	B. Lansing
+	C. Albany
+	D. Springfield
+
+Question No. 873 The Capital of State of Delaware is ?
+
+	A. Columbia
+	B. Dover
+	C. Helena
+	D. Tallahassee
+
+Question No. 874 The Capital of State of Alabama is ?
+
+	A. Montgomery
+	B. Charleston
+	C. Albany
+	D. Little Rock
+
+Question No. 875 The Capital of State of Missouri is ?
+
+	A. Jefferson City
+	B. Charleston
+	C. Raleigh
+	D. Albany
+
+Question No. 876 The Capital of State of Massachusetts is ?
+
+	A. Sacramento
+	B. Salt Lake City
+	C. Salem
+	D. Boston
+
+Question No. 877 The Capital of State of California is ?
+
+	A. Madison
+	B. Sacramento
+	C. Providence
+	D. Topeka
+
+Question No. 878 The Capital of State of Oklahoma is ?
+
+	A. Columbia
+	B. Columbia
+	C. Charleston
+	D. Oklahoma City
+
+Question No. 879 The Capital of State of Arizona is ?
+
+	A. Harrisburg
+	B. Saint Paul
+	C. Phoenix
+	D. Indianapolis
+
+Question No. 880 The Capital of State of New Mexico is ?
+
+	A. Nashville
+	B. Boston
+	C. Phoenix
+	D. Santa Fe
+
+Question No. 881 The Capital of State of Kansas is ?
+
+	A. Harrisburg
+	B. Montgomery
+	C. Phoenix
+	D. Topeka
+
+Question No. 882 The Capital of State of Maine is ?
+
+	A. Denver
+	B. Augusta
+	C. Des Moines
+	D. Oklahoma City
+
+Question No. 883 The Capital of State of Kentucky is ?
+
+	A. Frankfort
+	B. Providence
+	C. Montgomery
+	D. Columbus
+
+Question No. 884 The Capital of State of Rhode Island is ?
+
+	A. Providence
+	B. Denver
+	C. Austin
+	D. Hartford
+
+Question No. 885 The Capital of State of South Carolina is ?
+
+	A. Columbia
+	B. Montgomery
+	C. Frankfort
+	D. Richmond
+
+Question No. 886 The Capital of State of New Jersey is ?
+
+	A. Concord
+	B. Trenton
+	C. Carson City
+	D. Baton Rouge
+
+Question No. 887 The Capital of State of North Dakota is ?
+
+	A. Baton Rouge
+	B. Boston
+	C. Atlanta
+	D. Bismarck
+
+Question No. 888 The Capital of State of Nebraska is ?
+
+	A. Charleston
+	B. Little Rock
+	C. Frankfort
+	D. Lincoln
+
+Question No. 889 The Capital of State of Georgia is ?
+
+	A. Hartford
+	B. Des Moines
+	C. Trenton
+	D. Atlanta
+
+Question No. 890 The Capital of State of West Virginia is ?
+
+	A. Columbia
+	B. Nashville
+	C. Denver
+	D. Charleston
+
+Question No. 891 The Capital of State of Arkansas is ?
+
+	A. Albany
+	B. Little Rock
+	C. Carson City
+	D. Carson City
+
+Question No. 892 The Capital of State of Wyoming is ?
+
+	A. Cheyenne
+	B. Topeka
+	C. Concord
+	D. Indianapolis
+
+Question No. 893 The Capital of State of Vermont is ?
+
+	A. Honolulu
+	B. Honolulu
+	C. Montpelier
+	D. Oklahoma City
+
+Question No. 894 The Capital of State of Mississippi is ?
+
+	A. Carson City
+	B. Springfield
+	C. Jackson
+	D. Topeka
+
+Question No. 895 The Capital of State of New Hampshire is ?
+
+	A. Montgomery
+	B. Charleston
+	C. Concord
+	D. Madison
+
+Question No. 896 The Capital of State of Connecticut is ?
+
+	A. Hartford
+	B. Bismarck
+	C. Harrisburg
+	D. Columbia
+
+Question No. 897 The Capital of State of Florida is ?
+
+	A. Saint Paul
+	B. Tallahassee
+	C. Lansing
+	D. Boise
+
+Question No. 898 The Capital of State of Ohio is ?
+
+	A. Trenton
+	B. Columbus
+	C. Boston
+	D. Montgomery
+
+Question No. 899 The Capital of State of Colorado is ?
+
+	A. Olympia
+	B. Tallahassee
+	C. 	Pierre
+	D. Denver
+
+Question No. 900 The Capital of State of Iowa is ?
+
+	A. Boston
+	B. Des Moines
+	C. Providence
+	D. Dover
+

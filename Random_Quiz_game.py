@@ -3,7 +3,7 @@ import random,os
 question_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Question_papers'  # Path at which question papers will be created
 answer_path='/home/kapil/Desktop/Random_Quiz/Random_quiz/Answer_keys'	# Path at which Answer papers will be created
 
-
+count=1
 answer_key={
 
 		"Alabama":"Montgomery","Alaska":"Juneau","Arizona":"Phoenix","Arkansas":"Little Rock","California":"Sacramento",
@@ -69,14 +69,30 @@ def storing_answers(key,value):
 	answer_obj.close()
 	
 def storing_questions(key,value):
-	
+	global count
+	global answer_key
+	li=[]
 	question_obj=open(os.path.join(question_path,value),'a')
-	question_obj.write("The Capital of State of "+key+" is ?"+'\n')
-	question_obj.close()
+	question_obj.write("Question No. "+str(count)+" The Capital of State of "+key+" is ?"+'\n')
+	question_obj.write('\n')
+	count=count+1
+	
+	for i in range(0,3):
+		li.append(random.choice(list(answer_key.keys())))
+	random.shuffle(li)
+	
+	if key not in li:
+		li.append(key)
+	else:
+		li.append(random.choice(list(answer_key.keys())))
+	random.shuffle(li)
+	
+	for i in range(0,len(li)):
+		question_obj.write('\t'+chr(65+i)+". "+answer_key[li[i]]+"\n")
 		
-
-
-
-
+	question_obj.write("\n")
+	question_obj.close()
+	
+	
 
 Storing_quest_answer()
